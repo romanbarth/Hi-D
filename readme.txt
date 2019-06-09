@@ -5,8 +5,8 @@
 
 
  developed at:  
-       Laboratoire de Biologie Moléculaire Eucaryote (LBME), 
-       Centre de Biologie Intégrative (CBI), CNRS; 
+       Laboratoire de Biologie MolÃ©culaire Eucaryote (LBME), 
+       Centre de Biologie IntÃ©grative (CBI), CNRS; 
        University of Toulouse, UPS; 31062 
        Toulouse; France
 
@@ -14,6 +14,7 @@
 
 The software is provided "as is" as a set of MATLAB resource files and is 
 tested under MATLAB version 7.5 (R2017b).
+If you use this code or parts of it in your research, please refer to our publication.
 
 Execute the file HiD.m to process an example of a U2OS nucleus labeled by DNA-SiR. 
 The processed file can be easily changed by setting the appropriate directory (full 
