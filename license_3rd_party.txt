@@ -1,0 +1,171 @@
+ This section includes third-party license information for certain 
+ third-party functions included with HiD.
+ ----------------------------------------------------------------------- 
+
+ Reference to the publication:
+
+ developed at:  
+       Laboratoire de Biologie Moléculaire Eucaryote (LBME), 
+       Centre de Biologie Intégrative (CBI), CNRS; 
+       University of Toulouse, UPS; 31062 
+       Toulouse; France
+
+
+for the following files:
+
+Optical Flow
+- estimate_flow_interface.m
+- load_of_method.m
+- scale_image.m
+- compute_flow.m
+- structure_texture_decomposition_rof.m
+- compute_image_pyramid.m
+- resample_flow.m
+- compute_flow_base.m
+- robust_function.m
+- generalized_charbonnier.m
+- quadratic.m
+- partial_deriv.m
+- interp2_bicubic.m
+- flow_operator.m
+- make_convn_mat.m
+- convmtxn.m
+- deriv_over_x.m
+- detect_occlusion.m
+- denoise_color_weighted_medfilt2.m
+- weighted_median.m
+
+Bayesian inference
+- corr_repair.m
+- cov_shrinkage.m
+- lsqcurvefit_GLS.m
+- msd_curves_bayes.m
+- msd_fitting.m
+- nlparci_se.m
+- statgetargs.m
+
+Others
+- inpaint_nans.m
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Modified or unmodified files within the Optical Flow determination are the following:
+- estimate_flow_interface.m
+- load_of_method.m
+- scale_image.m
+- compute_flow.m
+- structure_texture_decomposition_rof.m
+- compute_image_pyramid.m
+- resample_flow.m
+- compute_flow_base.m
+- robust_function.m
+- generalized_charbonnier.m
+- quadratic.m
+- partial_deriv.m
+- interp2_bicubic.m
+- flow_operator.m
+- make_convn_mat.m
+- convmtxn.m
+- deriv_over_x.m
+- detect_occlusion.m
+- denoise_color_weighted_medfilt2.m
+- weighted_median.m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Authors: Deqing Sun, Department of Computer Science, Brown University
+Contact: dqsun@cs.brown.edu
+$Date: $
+$Revision: $
+
+Copyright 2007-2010, Brown University, Providence, RI. USA
+
+                         All Rights Reserved
+
+All commercial use of this software, whether direct or indirect, is
+strictly prohibited including, without limitation, incorporation into in
+a commercial product, use in a commercial service, or production of other
+artifacts for commercial purposes.     
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for research purposes is hereby granted without fee,
+provided that the above copyright notice appears in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation, and that the name of the author and Brown
+University not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior permission.        
+
+For commercial uses contact the Technology Venture Office of Brown University
+
+THE AUTHOR AND BROWN UNIVERSITY DISCLAIM ALL WARRANTIES WITH REGARD TO
+THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR ANY PARTICULAR PURPOSE.  IN NO EVENT SHALL THE AUTHOR OR
+BROWN UNIVERSITY BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL
+DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Original files within the Bayesian inference are the following:
+- corr_repair.m
+- cov_shrinkage.m
+- lsqcurvefit_GLS.m
+- msd_curves_bayes.m
+- msd_fitting.m
+- nlparci_se.m
+- statgetargs.m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+
+END-USER LICENSE AGREEMENT FOR RESEARCH SOFTWARE
+
+Redistribution Not Permitted
+
+© 2012 Massachusetts Institute of Technology. All rights reserved.
+
+THIS SOFTWARE IS BEING LICENSED FREE OF CHARGE FOR RESEARCH AND NON-COMMERCIAL PURPOSES ONLY
+
+The Massachusetts Institute of Technology ("MIT"), a non-profit institution of higher education, agrees to make the downloadable software and documentation, if any, (collectively, the "Software") available to you without charge for demonstrational and non-commercial purposes, subject to the following terms and conditions.
+
+1. Internal Use License. MIT hereby grants to you a non-transferable, nonexclusive royalty- free license (without any right to sublicense or distribute) to use the Software in machine- readable, object code form only and only as authorized in this License Agreement. You may use the Software on any single computer; use the Software on a second computer so long as the primary user of each copy is the same person and more than one copy is not simultaneously used; or copy the Software for archival purposes, provided any copy must contain all of the proprietary notices on the original Software. Neither concurrent use on two or more computers nor use in a local area network or other network is permitted, except as required by the game to function in a multiplayer environment provided that all users have their own separate authorization.
+
+2. Restrictions. You may not modify, translate, reverse engineer, decompile, disassemble, or create derivative works based on the Software. You may not copy the Software, except as specified above. You may not sublicense, rent, lease, or otherwise transfer rights to the Software. You may not remove any proprietary notices or labels on the Software.
+
+3. No Other Rights. MIT claims and reserves title to the Software and all rights and benefits afforded under any available United States and international laws protecting copyright and other intellectual property rights in the Software. Nothing herein shall be construed to limit the rights of MIT and its licensees to use, modify, adapt, or enhance the Software, or any derivative works based on the Software, for their own purposes. Nothing herein shall be construed to expand your rights with respect to the Software beyond those rights expressly granted you in paragraph 1.
+
+4. Termination. This License Agreement is effective upon your expressing agreement by clicking the "Agree" button below, or for instances when no button is present or otherwise disabled, when installing and using the software accompanying this license. This license will terminate automatically if you fail to comply with the limitations described above. On termination, you must uninstall and/or destroy all copies of the Software.
+
+5. Export Controls. You acknowledge that export of the Software may be subject to compliance with various laws, rules, and regulations that restrict the export of certain products and technical data. If you are within the United States, you represent that you will not export the Software outside of the United States, either directly or indirectly. If you are outside the United States, and if the Software is subject to U.S. export control restrictions, you are only allowed to obtain the Software in strict compliance with any applicable restrictions. If these restrictions are not observed, this license shall be null and void, and you shall immediately return or destroy the Software and all copies.
+
+6. Disclaimer of Warranty. You accept the Software on an "AS IS" basis. MIT MAKES NO REPRESENTATIONS OR WARRANTIES CONCERNING THE SOFTWARE, AND EXPRESSLY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION ANY EXPRESS OR IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS. MIT has no obligation to assist in your installation or use of the Software or to provide services or maintenance of any type with respect to the Software. The entire risk as to the quality and performance of the Software is borne by you. You acknowledge that the Software may contain errors or bugs. You must determine whether the Software sufficiently meets your requirements. This disclaimer of warranty constitutes an essential part of this Agreement.
+
+7. No Consequential Damages; Indemnification. IN NO EVENT SHALL MIT BE LIABLE TO YOU FOR ANY LOST PROFITS OR OTHER INCIDENTAL OR CONSEQUENTIAL DAMAGES RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT. To the extent permitted by applicable law, you agree to indemnify, defend, and hold harmless MIT and its directors, officers, representatives, employees, and agents against all losses, expenses (including without limitation any legal expenses), claims, demands, suits, or other actions arising from your use of the Software, except to the extent caused by the gross negligence or willful misconduct of MIT.
+
+8. Miscellaneous. If any provision of this Agreement is held to be unenforceable for any reason, such provision shall be modified only to the extent necessary to make it enforceable. You may not assign this Agreement. This Agreement shall be governed by and construed in accordance with the laws of the Commonwealth of Massachusetts irrespective of any conflicts of law principles. You agree that any legal action arising out of or in connection with this Agreement shall be brought in the state or Federal courts, as appropriate, in Suffolk County, Massachusetts. The applicability of the United Nations Convention of Contracts for the International Sale of Goods is expressly excluded.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- inpaint_nans.m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Copyright (c) 2009, John D'Errico 
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions are 
+met:
+
+* Redistributions of source code must retain the above copyright 
+notice, this list of conditions and the following disclaimer. 
+* Redistributions in binary form must reproduce the above copyright 
+notice, this list of conditions and the following disclaimer in 
+the documentation and/or other materials provided with the distribution
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
