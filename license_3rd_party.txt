@@ -3,10 +3,13 @@
  ----------------------------------------------------------------------- 
 
  Reference to the publication:
+ Nanoscale mapping of DNA dynamics in live human cells
+ Haitham A. Shaban, Roman Barth, Kerstin Bystricky
+ bioRxiv 405969; doi: https://doi.org/10.1101/405969
 
  developed at:  
-       Laboratoire de Biologie Moléculaire Eucaryote (LBME), 
-       Centre de Biologie Intégrative (CBI), CNRS; 
+       Laboratoire de Biologie MolÃ©culaire Eucaryote (LBME), 
+       Centre de Biologie IntÃ©grative (CBI), CNRS; 
        University of Toulouse, UPS; 31062 
        Toulouse; France
 
@@ -119,7 +122,7 @@ END-USER LICENSE AGREEMENT FOR RESEARCH SOFTWARE
 
 Redistribution Not Permitted
 
-© 2012 Massachusetts Institute of Technology. All rights reserved.
+Â© 2012 Massachusetts Institute of Technology. All rights reserved.
 
 THIS SOFTWARE IS BEING LICENSED FREE OF CHARGE FOR RESEARCH AND NON-COMMERCIAL PURPOSES ONLY
 
