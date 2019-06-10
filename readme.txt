@@ -2,7 +2,9 @@
  ----------------------------------------------------------------------- 
 
  Reference to the publication:
-
+ Nanoscale mapping of DNA dynamics in live human cells
+ Haitham A. Shaban, Roman Barth, Kerstin Bystricky
+ bioRxiv 405969; doi: https://doi.org/10.1101/405969
 
  developed at:  
        Laboratoire de Biologie Moléculaire Eucaryote (LBME), 
