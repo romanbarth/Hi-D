@@ -3,10 +3,10 @@
 % ----------------------------------------------------------------------- %
 %
 %
-% developed at:  
-%       Laboratoire de Biologie Moléculaire Eucaryote (LBME), 
-%       Centre de Biologie Intégrative (CBI), CNRS; 
-%       University of Toulouse, UPS; 31062 
+% developed at:
+%       Laboratoire de Biologie Moléculaire Eucaryote (LBME),
+%       Centre de Biologie Intégrative (CBI), CNRS;
+%       University of Toulouse, UPS; 31062
 %       Toulouse; France
 %
 % ----------------------------------------------------------------------- %
@@ -19,7 +19,7 @@ function im = loadimages(directory)
 %               the file to read in
 %
 %   OUTPUT
-%   im:          cell-vector containing the time series frames. Each cell 
+%   im:          cell-vector containing the time series frames. Each cell
 %                entry is a 2D array
 %
 % ----------------------------------------------------------------------- %
@@ -61,7 +61,11 @@ ind = vec==min(vec(isthere~=0));
 
 % see if file is multipage or single images
 if ~isempty(files)
-    bsi = strfind(directory, '\');
+    if ispc
+        bsi = strfind(directory, '\');
+    else
+        bsi = strfind(directory, '/');
+    end
     singleImages = false;
     for k = 1:length(files)
         try
@@ -80,7 +84,7 @@ if singleImages % can be RGB image, so take 3 as upper limit
     % read images in
     count = 1;
     ext = ending{ind};
-    for ii=1:length(files)        
+    for ii=1:length(files)
         if ~isempty(strfind(files(ii).name, ext))
             fname{count} = files(ii).name;
             count = count + 1;
@@ -90,13 +94,21 @@ if singleImages % can be RGB image, so take 3 as upper limit
     num_images = length(fname);
     im = cell(1, num_images);
     
-    f = waitbar(0, 'Reading in images...');
-    for ii = 1:num_images
-        waitbar(ii/num_images, f, 'Reading in images...');
-        im{ii} = double(imread([directory '\' fname{ii}]));
+    if ispc
+        f = waitbar(0, 'Reading in images...');
+        for ii = 1:num_images
+            waitbar(ii/num_images, f, 'Reading in images...');
+            im{ii} = double(imread([directory '\' fname{ii}]));
+        end
+        close(f)
+    else
+        f = waitbar(0, 'Reading in images...');
+        for ii = 1:num_images
+            waitbar(ii/num_images, f, 'Reading in images...');
+            im{ii} = double(imread([directory '/' fname{ii}]));
+        end
+        close(f)
     end
-    close(f)
-    
-else % for multipage tiffs, use just readTiffStack.m    
-    im = readTiffStack([directory(1:bsi(end)) files(1).name]);        
+else % for multipage tiffs, use just readTiffStack.m
+    im = readTiffStack([directory(1:bsi(end)) files(1).name]);
 end
