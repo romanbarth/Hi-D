@@ -1,4 +1,4 @@
- HiD
+﻿ HiD
  ----------------------------------------------------------------------- 
 
  Reference to the publication:
@@ -17,6 +17,13 @@
 The software is provided "as is" as a set of MATLAB resource files and is 
 tested under MATLAB version 7.5 (R2017b).
 If you use this code or parts of it in your research, please refer to our publication.
+
+Required toolboxes:
+
+- Image Processing Toolbox
+
+- Optimization Toolbox (for Bayesian model selection)
+- Statistics Toolbox (for Bayesian model selection)
 
 Execute the file HiD.m to process an example of a U2OS nucleus labeled by DNA-SiR. 
 The processed file can be easily changed by setting the appropriate directory (full 
