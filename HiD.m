@@ -23,7 +23,10 @@
 close all
 clearvars
 
-%% Set parameters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             USER INPUT                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set parameters
 % give the path to the file to analyse
 filepath = pwd;
 if ispc
@@ -39,7 +42,7 @@ pixelsize= 0.065;
 dT = 0.2;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                             USER INPUT                                  %
+%                            START SCRIPT                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Search path
 initialize % add all required paths to the Matlab path
@@ -51,10 +54,6 @@ datee(datee==':') = '-';
 
 %% load images, set mask and filter noise (blurring)
 [im, numIm, mask, mask_nuc] = Preprocessing(directory);
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                            START SCRIPT                                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 disp('Starting calculations...')
 
 %% calculate velocity field
@@ -83,7 +82,7 @@ end
 PlotMaps(im, mask_nuc, pixelsize, Bayes)
 
 cend = datestr(now);
-disp('Analysis finished!')
+disp('Hi-D analysis finished!')
 disp(['Started:  ' cstart])
 disp(['Finished: ' cend])
 % ----------------------------------------------------------------------- %
