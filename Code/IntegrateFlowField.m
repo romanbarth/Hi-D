@@ -38,7 +38,9 @@ xp(:,:,1) = x;
 yp(:,:,1) = y;
 
 % create grid for interpolation
-[xx, yy] = ndgrid(1:size(u{1},2), 1:size(u{1},1));
+[xx, yy] = meshgrid(1:size(u{1},2), 1:size(u{1},1));
+xx = xx';
+yy = yy';
 
 warning('off')
 
@@ -66,3 +68,4 @@ for t = 1:length(u)
     
 end
 close(f)
+warning('on')

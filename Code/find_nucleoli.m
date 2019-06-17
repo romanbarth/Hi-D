@@ -3,10 +3,10 @@
 % ----------------------------------------------------------------------- %
 %
 %
-% developed at:  
-%       Laboratoire de Biologie Moléculaire Eucaryote (LBME), 
-%       Centre de Biologie Intégrative (CBI), CNRS; 
-%       University of Toulouse, UPS; 31062 
+% developed at:
+%       Laboratoire de Biologie Moléculaire Eucaryote (LBME),
+%       Centre de Biologie Intégrative (CBI), CNRS;
+%       University of Toulouse, UPS; 31062
 %       Toulouse; France
 %
 % ----------------------------------------------------------------------- %
@@ -65,7 +65,11 @@ while ~isempty(thresh)
     end
 end
 
-mask_nuc(mask_nuc ~= 0) = 1;
-mask_nuc = ~mask_nuc;
+if exist('mask_nuc', 'var')
+    mask_nuc(mask_nuc ~= 0) = 1;
+    mask_nuc = ~mask_nuc;
+else
+    mask_nuc = ones(size(im));
+end
 
 close gcf
