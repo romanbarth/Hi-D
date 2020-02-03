@@ -5,7 +5,7 @@ Shaban, H.; Barth, R.; Recoules, L.; Bystricky, K.; Hi-D: Nanoscale mapping of n
 
  ----------------------------------------------------------------------- 
 
-The software is provided "as is" as a set of MATLAB resource files and is 
+The software is provided "as is" under the GNU General Public License as a set of MATLAB resource files and is 
 tested under MATLAB version 7.5 (R2017b).
 If you use this code or parts of it in your research, please refer to our publication.
 
